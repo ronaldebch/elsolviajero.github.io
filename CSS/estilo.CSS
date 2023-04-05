@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+/*Resetea relleno */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*Globar en Body*/
+body {
+    color: #3C3C3C;
+    font-family: Raleway, sans-serif;
+}
+
+a{ text-decoration: none;} /*quitar subrayado*/
+
+/*header*/
+
+header {
+    width: 900px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Todos los "a" dentro de header*/
+header a {
+    color: #3C3C3C;
+    font-weight: 600;
+
+}
+/*alinear la imagen con el texto "logo"*/
+header a img {
+    vertical-align: middle;
+    margin: 0px 8px;
+
+}
+/*la separacion se mantiene pero aumenta el area del clik "padding"*/
+header nav a {
+    padding: 12px;
+}
+/*queda el tamaño en todo el main*/
+main{
+    width: 960px;
+    margin: auto;
+
+}
+
+/*hero banner*/
+
+#hero-banner {
+    height: 450px;
+    /* imagen de fondo */
+    background-image: url(../img/playa.jpg);
+    background-size: 960px;
+    background-repeat: no-repeat; /*No crear mosaico*/
+    background-position: center center;
+    position: relative;
+}
+
+h1 {
+    font-size: 32px;
+    position: absolute;
+    left: 150px;
+    top: 192px;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+  }
+/*seccion de promos*/
+  #promos{
+    height: 382px;
+    margin-top: 52px;
+    background-color: #FAF0E9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+#promos article {
+    width: 256px;
+
+}
+
+#promos h2 {
+    font-size: 16px;
+    margin: 12px 0px;
+
+}
+
+/*seccion de servicios */
+#servicios {
+    width: 680px;
+    margin: 52px auto 0px auto;
+    height: 372px;
+    display: flex;
+    flex-wrap: wrap; /*respeta el ancho del contenido*/
+    column-gap: 100px;
+    row-gap: 32px;
+    
+}
+
+#servicios h2 {
+    text-align: center;
+    width: 100%;
+}
+
+#servicios a {
+    display: block;
+    width: 160px;
+    height: 140px;
+    border: 1px solid #3C3C3C;
+    border-radius: 12px;
+    font-weight: 600;
+    color: #3C3C3C;
+    text-align: center;
+    transition: 100ms; /*para el */
+}
+#servicios a:hover{ /*efecto al */
+    background-color: #3C3C3C;
+    color: #fff;
+}
+.material-symbols-outlined{
+    font-size: 56px;
+    margin: 20px 52px 
+}
+/*formulario de contacto*/
+#contacto {
+    height: 450px;
+    background-color: #EC7D54;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*formulario de contacto*/
+#contacto form{
+    width: 550px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    background-color: #F8A281;
+    margin-top: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+input::placeholder,textarea::placeholder{
+    color: #fff;
+}
+textarea {
+    height: 152px;
+    resize: none;
+}
+
+button{
+    width: 212px;
+    background-color: #fff;
+    border: 1px solid #CD5F35;
+    border-radius: 8px;
+    padding: 8px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    cursor: pointer;
+
+
+}
+
+/*Mapa de Google*/
+#mapa {
+margin-top: 52px;
+}
+
+#mapa iframe{
+    width: 960px;
+    height: 450px;
+    border: none;
+}
+
+/*footer*/
+footer{
+    width: 960px;
+    margin: 52px auto 0px auto;
+    height: 160px;
+    background-color: #3C3C3C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a{
+    color: #fff;
+}
+footer a img{
+    margin: 0px 8px 0px 12px;
+    vertical-align: middle;
+}
+
+footer div a img {
+    width: 24px;
+
+}
